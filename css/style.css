@@ -1,0 +1,296 @@
+@import url(04b03.css);
+
+body 
+{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+.clearfix 
+{
+	display: block;
+	clear: both;
+}
+
+
+/* Typography
+--------------------------------------------- */
+
+body {
+	font-size:21px;
+	line-height: 32px;
+	color: #919191;
+	word-wrap:break-word !important;
+	font-family: '04b03', sans-serif;
+}
+
+p {
+	margin: 0 0 2rem;
+	padding: 0;
+}
+
+#VoteForUs
+{
+	margin: 1em 0;
+	font-weight: bold;
+	font-size: 24px;
+	color: #fff;
+}
+
+#PlayDemo
+{
+	margin-top: 27px;
+}
+
+#TwitterButton
+{
+	margin-top: 27px;
+}
+
+#Presskit
+{
+	margin-top: 27px;
+}
+
+a {
+	text-decoration: none;
+	border-radius: 6px;
+	color: #fff;
+	padding: 0.6em 1.125em;
+}
+
+#LinkToGreenlightWeb
+{
+	background-color: #974848;
+}
+
+#LinkToGreenlightDesktop
+{
+	background-color: #974848;
+}
+
+#LinkToDemo
+{
+	background-color: #4e6a4e;
+}
+
+#LinkToTwitter
+{
+	background-color: #3c5473;
+}
+
+#LinkToPresskit
+{
+	background-color: #513d56;
+}
+
+
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #FFF;
+	font-family: '04b03', sans-serif;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 0 0 16px;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+#container{
+	margin: auto;
+	max-width: 1200px;
+}
+
+header {
+	width: 94%;
+	padding: 3%;
+}
+
+header #title {
+	font-size: 50px;
+	color: #fff;
+}
+
+#content {
+	float: left;
+	padding: 2%;
+	width: 46%;
+	margin-top: 4%;
+	height: 70%;
+}
+
+#video-container{
+	float:right;
+	padding: 2%;
+	width: 46%;
+	height: 70%;
+	margin-top: 4%;
+}
+
+#video
+{
+	margin: auto;
+}
+
+footer{
+	width: 94%;
+	height: 4%;
+	color: #fff;
+	text-align: center;
+}
+
+#email
+{
+	border-radius: 6px;
+	width: 25%;
+	padding-left: 0.5em;
+	color: #000;
+	text-align: center;
+}
+
+input{
+	color: rgba(255, 255, 255, 0.75);
+	font-family: "04b03", sans-serif;
+	font-size: 16pt;
+	font-weight: 400;
+	letter-spacing: -0.01em;
+	line-height: 1.65em;
+}
+
+input[type="submit"],
+input[type="button"],
+	button,
+	.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		background-color: #974848;
+		border-radius: 6px;
+		border: 0;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 700;
+		height: 2.75em;
+		line-height: 2.75em;
+		padding: 0 1.125em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			background-color: #854949;
+			color: #000;
+		}
+
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		button:active,
+		.button:active {
+			background-color: #754A4A;
+		}
+
+#SignUp
+{
+	height: 2.1em;
+	line-height: 2.1em;
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	header {
+		text-align: center;
+	}
+
+	nav {
+		text-align: center;
+	}
+
+	#content {
+		width: 94%;
+		height: 80%;
+		padding: 3%;
+		display: block;
+	}
+
+	#video-container {
+		width: 94%;
+		padding: 3%;
+		display: block;
+	}
+
+	footer
+	{
+		margin-bottom: 20px;
+	}
+
+	#email
+	{
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
+
+	#SignUp
+	{
+		display: block;
+		margin: 20px auto;
+	}
+
+}
+/*
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+*/
