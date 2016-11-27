@@ -1,13 +1,13 @@
 @import url(04b03.css);
 
-body 
+body
 {
 	margin: 0;
 	padding: 0;
 	background-color: black;
 }
 
-.clearfix 
+.clearfix
 {
 	display: block;
 	clear: both;
@@ -234,8 +234,8 @@ input[type="button"],
 
 #SignUp
 {
-	height: 2.1em;
-	line-height: 2.1em;
+	height: 2.1em !important;
+	line-height: 2.1em !important;
 }
 
 

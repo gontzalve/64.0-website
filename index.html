@@ -9,6 +9,7 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 		<link rel="icon" type="image/png" href="favicon/favicon.ico">
 		<script src="https://platform.twitter.com/widgets.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div id = "container">
@@ -40,11 +41,29 @@
 			</section>
 
 			<footer id="footer" class="clearfix">
-				<form id="signup-form" method="post" action="#">
-					<input type="email" name="email" id="email" placeholder="Email Address" />
-					<input type="submit" id = "SignUp" value="Suscribe!" />
+				<form id="signup-form" method="POST">
+					<input id="email" placeholder="Email Address" />
+					<input id="SignUp" class="button" value="Suscribe!" />
 				</form>
 			</footer>
 		</div>
 	</body>
 </html>
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+		$("#SignUp").click(function( event ) {
+			$.ajax({
+				type: "POST",
+				url: "/mailchimp/add-email-to-list.php",
+				data: {
+					email: $("#email").val()
+				},
+				success: function(){
+					$("signup-form").hide();
+					$("footer").html("<p> thanks! </p>");
+				},
+				});
+		});
+	});
+</script>
